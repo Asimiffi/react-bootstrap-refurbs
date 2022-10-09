@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Graduate&display=swap');
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; 
+  font-family: 'Cinzel', serif;
+}
+/*-----------------------------Media Screens-----------------------------*/
+@media (min-width: 600px)and (max-width:750px)    {
+  h2{
+    font-size: 1.3rem !important;
+  }
+  h4{
+    font-size: 1rem !important;
+  }
+  h6{
+    font-size: 0.9rem !important;
+  }
+  p{
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width:600px)    {
+  h2{
+    font-size: 1.3rem !important;
+  }
+  h4{
+    font-size: 0.9rem !important;
+  }
+  h6{
+    font-size: 0.8rem !important;
+  }
+  p{
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width:585px){
+.bookingimg{
+  width: 40%;
+}
+
+}
+@media screen and (max-width:1000px){
+  #header{
+    height: 80vh !important;
+  }
+  h1{
+    font-size: 1.2rem !important;
+  }
+  .typed-text{
+    font-size: 1.1rem !important;
+  }
+.header-image{
+  display: none;
+}
+.sticks{
+ display: none;
+}
+.displaynone{
+  display: none;
+}
+#why-us{
+  height: auto !important;
+}
+}
+
+/*------------------------Root-------------------------*/
+.navbar-extended{
+  background-image: linear-gradient(to right top, #5d2e87, #0060b8, #0088cb, #00abc4, #00c9af);
+}
+.navbar-extended  ul  li  a:hover{
+  border-top: 0.1875rem solid #00C9AF !important;
+}
+/*---------------------------header-----------------------*/
+#header{
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(to right bottom, #5d2e87, #0060b8, #0088cb, #00abc4, #00c9af);
+  ;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-image{
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  z-index: 2;
+}
+.typed-text{
+  color: white;
+}
+
+.info{ 
+  text-align: center;
+  z-index: 2;
+}
+.main-info{
+  color:white;
+  font-size: 1.3rem;
+}
+
+.btn-header{
+  background: #00C9AF;
+  padding: 10px;
+  border-radius: 30px;
+  border-color: #00C9AF;
+  color: white;
+  font-weight: 600;
+}
+.typed-text{
+  font-size: 1.5rem;
+  line-height: 4rem;
+}
+
+.scroll{
+  position: fixed;
+  z-index: 99;
+  display: flex;
+  background: #00C9AF;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all 1s ease;
+  justify-content: center;
+  list-style: none;
+}
+
+/*------------------why-us----------------------------*/
+#why-us{
+  height: auto;
+  padding: 5%;
+  text-align: center;
+  background: #0075C2;
+  color: white;
+}
+
+h6 {
+  animation-duration: 1s;
+  color: red;
+  font-size: 32px !important;
+  animation-name: blink;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes blink {
+  from {
+    background: #00c9af;
+     
+  }
+  to {
+    background: white;
+  }
+}
+/*------------------------------footer-----------------*/
+#footer{
+background-image: linear-gradient(to right bottom, #5d2e87, #0060b8, #0088cb, #00abc4, #00c9af);
+  height: 40vh;
+  color: white;
+}
+/*----------------------popup--------------------*/
+.popup-up{
+  height: 100%; 
+  backdrop-filter: blur(5px);
+  color: white;
+  display:flex !important; 
+  justify-content:center !important; 
+  align-items: center !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 25;
+  width: 100%;
+}
+.popup{
+background: #00C9AF;
+width: 500px;
+padding:2%;
+overflow: hidden;
+}
